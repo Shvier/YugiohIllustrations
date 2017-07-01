@@ -1,0 +1,6 @@
+framework module Pods_YugiohIllustrations {
+  umbrella header "Pods-YugiohIllustrations-umbrella.h"
+
+  export *
+  module * { export * }
+}

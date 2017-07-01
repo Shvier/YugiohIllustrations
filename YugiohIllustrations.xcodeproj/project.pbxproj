@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C05B47431F0791BE009A15FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B47421F0791BE009A15FC /* AppDelegate.swift */; };
-		C05B47451F0791BE009A15FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B47441F0791BE009A15FC /* ViewController.swift */; };
 		C05B47481F0791BE009A15FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05B47461F0791BE009A15FC /* Main.storyboard */; };
 		C05B474A1F0791BE009A15FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05B47491F0791BE009A15FC /* Assets.xcassets */; };
 		C05B474D1F0791BE009A15FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05B474B1F0791BE009A15FC /* LaunchScreen.storyboard */; };
+		C07039951F079397007D9185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07039941F079397007D9185 /* ViewController.swift */; };
+		C07039971F07939C007D9185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07039961F07939C007D9185 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C05B473F1F0791BE009A15FC /* YugiohIllustrations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YugiohIllustrations.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C05B47421F0791BE009A15FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C05B47441F0791BE009A15FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C05B47471F0791BE009A15FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C05B47491F0791BE009A15FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C05B474C1F0791BE009A15FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C05B474E1F0791BE009A15FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07039941F079397007D9185 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C07039961F07939C007D9185 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,62 @@
 		C05B47411F0791BE009A15FC /* YugiohIllustrations */ = {
 			isa = PBXGroup;
 			children = (
-				C05B47421F0791BE009A15FC /* AppDelegate.swift */,
-				C05B47441F0791BE009A15FC /* ViewController.swift */,
-				C05B47461F0791BE009A15FC /* Main.storyboard */,
+				C070398F1F07936E007D9185 /* AppDelegate */,
+				C07039901F07936E007D9185 /* Database */,
+				C07039911F07936E007D9185 /* Main */,
+				C07039981F0793B1007D9185 /* SupportingFiles */,
 				C05B47491F0791BE009A15FC /* Assets.xcassets */,
+			);
+			path = YugiohIllustrations;
+			sourceTree = "<group>";
+		};
+		C070398F1F07936E007D9185 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C07039961F07939C007D9185 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C07039901F07936E007D9185 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		C07039911F07936E007D9185 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C07039921F079397007D9185 /* Home */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C07039921F079397007D9185 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C07039931F079397007D9185 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C07039931F079397007D9185 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C07039941F079397007D9185 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C07039981F0793B1007D9185 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C05B47461F0791BE009A15FC /* Main.storyboard */,
 				C05B474B1F0791BE009A15FC /* LaunchScreen.storyboard */,
 				C05B474E1F0791BE009A15FC /* Info.plist */,
 			);
-			path = YugiohIllustrations;
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +185,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C05B47451F0791BE009A15FC /* ViewController.swift in Sources */,
-				C05B47431F0791BE009A15FC /* AppDelegate.swift in Sources */,
+				C07039971F07939C007D9185 /* AppDelegate.swift in Sources */,
+				C07039951F079397007D9185 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +313,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FQVA73S8GZ;
 				INFOPLIST_FILE = YugiohIllustrations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shvier.YugiohIllustrations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FQVA73S8GZ;
 				INFOPLIST_FILE = YugiohIllustrations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shvier.YugiohIllustrations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +354,7 @@
 				C05B47531F0791BE009A15FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

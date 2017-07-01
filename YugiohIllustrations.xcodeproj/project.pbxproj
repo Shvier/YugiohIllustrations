@@ -11,8 +11,9 @@
 		C05B47481F0791BE009A15FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05B47461F0791BE009A15FC /* Main.storyboard */; };
 		C05B474A1F0791BE009A15FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05B47491F0791BE009A15FC /* Assets.xcassets */; };
 		C05B474D1F0791BE009A15FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05B474B1F0791BE009A15FC /* LaunchScreen.storyboard */; };
-		C07039951F079397007D9185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07039941F079397007D9185 /* ViewController.swift */; };
+		C07039951F079397007D9185 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07039941F079397007D9185 /* HomeViewController.swift */; };
 		C07039971F07939C007D9185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07039961F07939C007D9185 /* AppDelegate.swift */; };
+		C070399A1F07968C007D9185 /* YugiohCard.db in Resources */ = {isa = PBXBuildFile; fileRef = C07039991F07968C007D9185 /* YugiohCard.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +24,9 @@
 		C05B47491F0791BE009A15FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C05B474C1F0791BE009A15FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C05B474E1F0791BE009A15FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C07039941F079397007D9185 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C07039941F079397007D9185 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C07039961F07939C007D9185 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C07039991F07968C007D9185 /* YugiohCard.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = YugiohCard.db; sourceTree = "<group>"; };
 		C8FD10EC39C967AB89FF4582 /* Pods-YugiohIllustrations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YugiohIllustrations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YugiohIllustrations/Pods-YugiohIllustrations.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 		C07039901F07936E007D9185 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				C07039991F07968C007D9185 /* YugiohCard.db */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -121,7 +124,7 @@
 		C07039931F079397007D9185 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C07039941F079397007D9185 /* ViewController.swift */,
+				C07039941F079397007D9185 /* HomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C070399A1F07968C007D9185 /* YugiohCard.db in Resources */,
 				C05B474D1F0791BE009A15FC /* LaunchScreen.storyboard in Resources */,
 				C05B474A1F0791BE009A15FC /* Assets.xcassets in Resources */,
 				C05B47481F0791BE009A15FC /* Main.storyboard in Resources */,
@@ -261,7 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C07039971F07939C007D9185 /* AppDelegate.swift in Sources */,
-				C07039951F079397007D9185 /* ViewController.swift in Sources */,
+				C07039951F079397007D9185 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

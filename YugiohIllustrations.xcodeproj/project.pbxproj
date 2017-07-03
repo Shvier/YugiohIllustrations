@@ -13,7 +13,8 @@
 		C05B474D1F0791BE009A15FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05B474B1F0791BE009A15FC /* LaunchScreen.storyboard */; };
 		C07039951F079397007D9185 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07039941F079397007D9185 /* HomeViewController.swift */; };
 		C07039971F07939C007D9185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07039961F07939C007D9185 /* AppDelegate.swift */; };
-		C070399A1F07968C007D9185 /* YugiohCard.db in Resources */ = {isa = PBXBuildFile; fileRef = C07039991F07968C007D9185 /* YugiohCard.db */; };
+		C08F3FDD1F0A1FE30006993E /* YugiohCard.db in Resources */ = {isa = PBXBuildFile; fileRef = C08F3FDC1F0A1FE30006993E /* YugiohCard.db */; };
+		C08F3FE11F0A272C0006993E /* SHSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F3FE01F0A272C0006993E /* SHSettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +27,8 @@
 		C05B474E1F0791BE009A15FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C07039941F079397007D9185 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C07039961F07939C007D9185 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C07039991F07968C007D9185 /* YugiohCard.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = YugiohCard.db; sourceTree = "<group>"; };
+		C08F3FDC1F0A1FE30006993E /* YugiohCard.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = YugiohCard.db; sourceTree = "<group>"; };
+		C08F3FE01F0A272C0006993E /* SHSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHSettingViewController.swift; sourceTree = "<group>"; };
 		C8FD10EC39C967AB89FF4582 /* Pods-YugiohIllustrations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YugiohIllustrations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YugiohIllustrations/Pods-YugiohIllustrations.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +102,7 @@
 		C07039901F07936E007D9185 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				C07039991F07968C007D9185 /* YugiohCard.db */,
+				C08F3FDC1F0A1FE30006993E /* YugiohCard.db */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -108,6 +110,7 @@
 		C07039911F07936E007D9185 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C08F3FDE1F0A270C0006993E /* Setting */,
 				C07039921F079397007D9185 /* Home */,
 			);
 			path = Main;
@@ -139,6 +142,22 @@
 			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		C08F3FDE1F0A270C0006993E /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C08F3FDF1F0A270C0006993E /* ViewController */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		C08F3FDF1F0A270C0006993E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C08F3FE01F0A272C0006993E /* SHSettingViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +187,7 @@
 		C05B47371F0791BE009A15FC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SH;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Shvier;
@@ -202,7 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C070399A1F07968C007D9185 /* YugiohCard.db in Resources */,
+				C08F3FDD1F0A1FE30006993E /* YugiohCard.db in Resources */,
 				C05B474D1F0791BE009A15FC /* LaunchScreen.storyboard in Resources */,
 				C05B474A1F0791BE009A15FC /* Assets.xcassets in Resources */,
 				C05B47481F0791BE009A15FC /* Main.storyboard in Resources */,
@@ -266,6 +286,7 @@
 			files = (
 				C07039971F07939C007D9185 /* AppDelegate.swift in Sources */,
 				C07039951F079397007D9185 /* HomeViewController.swift in Sources */,
+				C08F3FE11F0A272C0006993E /* SHSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

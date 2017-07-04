@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import SnapKit
 
 class HomeViewController: UIViewController {
+    
+    var filterView: SHFilterView?
     
     func leftBarItemAction(sender: UIBarButtonItem) {
         let settingVC = SHSettingViewController()
@@ -17,6 +20,12 @@ class HomeViewController: UIViewController {
     
     func initUI() {
         configNavi()
+        filterView = SHFilterView()
+        view.addSubview(filterView!)
+        filterView?.snp.makeConstraints({ (make) in
+            make.left.right.equalTo(view)
+            make.top.equalTo(view).offset(64)
+        })
     }
     
     func configNavi() {
@@ -33,7 +42,7 @@ class HomeViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreated.1
     }
 
 }

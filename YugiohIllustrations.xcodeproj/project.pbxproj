@@ -14,10 +14,10 @@
 		C05B47481F0791BE009A15FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05B47461F0791BE009A15FC /* Main.storyboard */; };
 		C05B474A1F0791BE009A15FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05B47491F0791BE009A15FC /* Assets.xcassets */; };
 		C05B474D1F0791BE009A15FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05B474B1F0791BE009A15FC /* LaunchScreen.storyboard */; };
+		C06743D81F677E5E0025C170 /* YugiohCard.db in Resources */ = {isa = PBXBuildFile; fileRef = C06743D71F677E5E0025C170 /* YugiohCard.db */; };
 		C07039951F079397007D9185 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07039941F079397007D9185 /* HomeViewController.swift */; };
 		C07039971F07939C007D9185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07039961F07939C007D9185 /* AppDelegate.swift */; };
 		C08F3FE11F0A272C0006993E /* SHSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F3FE01F0A272C0006993E /* SHSettingViewController.swift */; };
-		C08F3FE31F0A82870006993E /* YugiohCard.db in Resources */ = {isa = PBXBuildFile; fileRef = C08F3FE21F0A82870006993E /* YugiohCard.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +31,10 @@
 		C05B47491F0791BE009A15FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C05B474C1F0791BE009A15FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C05B474E1F0791BE009A15FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C06743D71F677E5E0025C170 /* YugiohCard.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = YugiohCard.db; sourceTree = "<group>"; };
 		C07039941F079397007D9185 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C07039961F07939C007D9185 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C08F3FE01F0A272C0006993E /* SHSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHSettingViewController.swift; sourceTree = "<group>"; };
-		C08F3FE21F0A82870006993E /* YugiohCard.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = YugiohCard.db; sourceTree = "<group>"; };
 		C8FD10EC39C967AB89FF4582 /* Pods-YugiohIllustrations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YugiohIllustrations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YugiohIllustrations/Pods-YugiohIllustrations.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,14 +121,22 @@
 		C05B47411F0791BE009A15FC /* YugiohIllustrations */ = {
 			isa = PBXGroup;
 			children = (
+				C06743D61F677E580025C170 /* Database */,
 				C053DF911F0B64B700EA9A93 /* Base */,
 				C070398F1F07936E007D9185 /* AppDelegate */,
-				C07039901F07936E007D9185 /* Database */,
 				C07039911F07936E007D9185 /* Main */,
 				C07039981F0793B1007D9185 /* SupportingFiles */,
 				C05B47491F0791BE009A15FC /* Assets.xcassets */,
 			);
 			path = YugiohIllustrations;
+			sourceTree = "<group>";
+		};
+		C06743D61F677E580025C170 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				C06743D71F677E5E0025C170 /* YugiohCard.db */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		C070398F1F07936E007D9185 /* AppDelegate */ = {
@@ -137,14 +145,6 @@
 				C07039961F07939C007D9185 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		C07039901F07936E007D9185 /* Database */ = {
-			isa = PBXGroup;
-			children = (
-				C08F3FE21F0A82870006993E /* YugiohCard.db */,
-			);
-			path = Database;
 			sourceTree = "<group>";
 		};
 		C07039911F07936E007D9185 /* Main */ = {
@@ -263,7 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C08F3FE31F0A82870006993E /* YugiohCard.db in Resources */,
+				C06743D81F677E5E0025C170 /* YugiohCard.db in Resources */,
 				C05B474D1F0791BE009A15FC /* LaunchScreen.storyboard in Resources */,
 				C05B474A1F0791BE009A15FC /* Assets.xcassets in Resources */,
 				C05B47481F0791BE009A15FC /* Main.storyboard in Resources */,
@@ -279,13 +279,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YugiohIllustrations-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5BE492E77CCD6BF35735E2BB /* [CP] Copy Pods Resources */ = {
@@ -294,9 +297,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YugiohIllustrations/Pods-YugiohIllustrations-resources.sh",
+				"${PODS_ROOT}/Bugtags/Bugtags.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -309,9 +315,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YugiohIllustrations/Pods-YugiohIllustrations-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

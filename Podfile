@@ -2,6 +2,7 @@ platform :ios, 9.0
 use_frameworks!
 
 target ‘YugiohIllustrations’ do
+
    # Database
    pod ‘FMDB’
 

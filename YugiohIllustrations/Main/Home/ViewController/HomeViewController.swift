@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     
     var filterView: SHFilterView?
     
-    func leftBarItemAction(sender: UIBarButtonItem) {
+    @objc func leftBarItemAction(sender: UIBarButtonItem) {
         let settingVC = SHSettingViewController()
         present(settingVC, animated: true, completion: nil)
     }

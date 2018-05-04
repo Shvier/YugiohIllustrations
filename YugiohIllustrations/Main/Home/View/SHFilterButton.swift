@@ -25,7 +25,7 @@ class SHFilterButton: UIButton {
         addTarget(self, action: #selector(self.clicked(sender:)), for: .touchUpInside)
     }
     
-    func clicked(sender: UIButton) {
+    @objc func clicked(sender: UIButton) {
         
     }
     

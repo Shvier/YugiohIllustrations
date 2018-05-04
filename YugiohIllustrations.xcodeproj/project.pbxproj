@@ -235,7 +235,7 @@
 				TargetAttributes = {
 					C05B473E1F0791BE009A15FC = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = FQVA73S8GZ;
+						DevelopmentTeam = PGNG7584J8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -467,7 +467,7 @@
 			baseConfigurationReference = C8FD10EC39C967AB89FF4582 /* Pods-YugiohIllustrations.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FQVA73S8GZ;
+				DEVELOPMENT_TEAM = PGNG7584J8;
 				INFOPLIST_FILE = YugiohIllustrations/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -482,7 +482,7 @@
 			baseConfigurationReference = 72DEA57321A5D58CE9869659 /* Pods-YugiohIllustrations.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FQVA73S8GZ;
+				DEVELOPMENT_TEAM = PGNG7584J8;
 				INFOPLIST_FILE = YugiohIllustrations/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
